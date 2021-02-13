@@ -1,0 +1,29 @@
+\begin{theindex}
+
+  \item {binary.\+cpp}, \hyperpage{4}
+    \subitem {binary\+\_\+search}, \hyperpage{4}
+    \subitem {T\+E\+S\+T\+\_\+\+C\+A\+SE}, \hyperpage{6}
+  \item {binary\+\_\+search}
+    \subitem {binary.\+cpp}, \hyperpage{4}
+
+  \indexspace
+
+  \item {insertion.\+cpp}, \hyperpage{7}
+    \subitem {insertion\+\_\+sort}, \hyperpage{8}
+    \subitem {print}, \hyperpage{9}
+    \subitem {T\+E\+S\+T\+\_\+\+C\+A\+SE}, \hyperpage{11}
+  \item {insertion\+\_\+sort}
+    \subitem {insertion.\+cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {print}
+    \subitem {insertion.\+cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {T\+E\+S\+T\+\_\+\+C\+A\+SE}
+    \subitem {binary.\+cpp}, \hyperpage{6}
+    \subitem {insertion.\+cpp}, \hyperpage{11}
+
+\end{theindex}

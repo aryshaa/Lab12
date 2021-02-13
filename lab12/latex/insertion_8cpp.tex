@@ -1,0 +1,156 @@
+\hypertarget{insertion_8cpp}{}\subsection{insertion.\+cpp File Reference}
+\label{insertion_8cpp}\index{insertion.\+cpp@{insertion.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for insertion.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{insertion_8cpp__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{insertion_8cpp_ad43b712bc7e658f7843a1f40f9fb5b09}{insertion\+\_\+sort} (int a\mbox{[}$\,$\mbox{]}, int size)
+\item 
+void \hyperlink{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397}{print} (int a\mbox{[}$\,$\mbox{]}, int size)
+\item 
+\hyperlink{insertion_8cpp_a46b59430c07b056ea10a63cf31a92798}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Insertion\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000001}{Test}]
+\begin{DoxyVerbInclude}
+insertion.cpp:68: passed: ss.str() == "83 86 77 15 93 \n15 77 83 86 93 \n" for: "83 86 77 15 93 
+15 77 83 86 93 
+"
+==
+"83 86 77 15 93 
+15 77 83 86 93 
+"
+Passed 1 test case with 1 assertion.
+
+\end{DoxyVerbInclude}
+ \end{DoxyRefDesc}
+
+
+\subsubsection{Function Documentation}
+\mbox{\Hypertarget{insertion_8cpp_ad43b712bc7e658f7843a1f40f9fb5b09}\label{insertion_8cpp_ad43b712bc7e658f7843a1f40f9fb5b09}} 
+\index{insertion.\+cpp@{insertion.\+cpp}!insertion\+\_\+sort@{insertion\+\_\+sort}}
+\index{insertion\+\_\+sort@{insertion\+\_\+sort}!insertion.\+cpp@{insertion.\+cpp}}
+\paragraph{\texorpdfstring{insertion\+\_\+sort()}{insertion\_sort()}}
+{\footnotesize\ttfamily void insertion\+\_\+sort (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Sorts an array, using insertion sort. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the array to sort \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file insertion.\+cpp.
+
+
+\begin{DoxyCode}
+15 \{
+16    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < size; i++)
+17    \{
+18       \textcolor{keywordtype}{int} next = a[i];
+19       \textcolor{comment}{// Move all larger elements up}
+20       \textcolor{keywordtype}{int} j = i;
+21       \textcolor{keywordflow}{while} (j > 0 && a[j - 1] > next)
+22       \{
+23          a[j] = a[j - 1];
+24          j--;
+25       \}
+26       \textcolor{comment}{// Insert the element}
+27       a[j] = next;
+28    \}
+29 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{insertion_8cpp_ad43b712bc7e658f7843a1f40f9fb5b09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397}\label{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397}} 
+\index{insertion.\+cpp@{insertion.\+cpp}!print@{print}}
+\index{print@{print}!insertion.\+cpp@{insertion.\+cpp}}
+\paragraph{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Prints all elements in an array. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the array to print \\
+\hline
+{\em size} & the number of elements in a \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file insertion.\+cpp.
+
+
+\begin{DoxyCode}
+37 \{  
+38    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++)
+39    \{
+40       cout << a[i] << \textcolor{stringliteral}{" "};
+41    \}
+42    cout << endl;
+43 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{insertion_8cpp_a46b59430c07b056ea10a63cf31a92798}\label{insertion_8cpp_a46b59430c07b056ea10a63cf31a92798}} 
+\index{insertion.\+cpp@{insertion.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!insertion.\+cpp@{insertion.\+cpp}}
+\paragraph{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Insertion\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file insertion.\+cpp.
+
+
+\begin{DoxyCode}
+52 \{  
+53    \textcolor{keyword}{const} \textcolor{keywordtype}{int} SIZE = 5;
+54    \textcolor{keywordtype}{int} values[SIZE];
+55    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < SIZE; i++)
+56    \{
+57       values[i] = rand() % 100;
+58    \}
+59    std::streambuf *b = std::cout.rdbuf(); std::stringstream ss;
+60     std::streambuf *sb = ss.rdbuf(); std::cout.rdbuf(sb);
+61     \textcolor{comment}{// Now all output will be redirected into ss}
+62    \hyperlink{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397}{print}(values, SIZE);
+63    \hyperlink{insertion_8cpp_ad43b712bc7e658f7843a1f40f9fb5b09}{insertion\_sort}(values, SIZE);
+64    \hyperlink{insertion_8cpp_a5590577c7dd63cd87f70a079fe94d397}{print}(values, SIZE);
+65    \textcolor{comment}{// set output back to the terminal }
+66    std::cout.rdbuf(b);
+67    
+68    CHECK(ss.str() == \textcolor{stringliteral}{"83 86 77 15 93 \(\backslash\)n15 77 83 86 93 \(\backslash\)n"}); 
+69    \textcolor{comment}{//return 0;}
+70 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{insertion_8cpp_a46b59430c07b056ea10a63cf31a92798_cgraph}
+\end{center}
+\end{figure}

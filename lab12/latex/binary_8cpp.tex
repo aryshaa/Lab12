@@ -1,0 +1,93 @@
+\hypertarget{binary_8cpp}{}\subsection{binary.\+cpp File Reference}
+\label{binary_8cpp}\index{binary.\+cpp@{binary.\+cpp}}
+{\ttfamily \#include \char`\"{}catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for binary.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{binary_8cpp__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{binary_8cpp_a961e363a3e72374639e432be6f19c6af}{binary\+\_\+search} (int a\mbox{[}$\,$\mbox{]}, int from, int to, int value)
+\item 
+\hyperlink{binary_8cpp_a2d4b2d69e71e492dde7fa00d7921087d}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Binary Search\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\mbox{\Hypertarget{binary_8cpp_a961e363a3e72374639e432be6f19c6af}\label{binary_8cpp_a961e363a3e72374639e432be6f19c6af}} 
+\index{binary.\+cpp@{binary.\+cpp}!binary\+\_\+search@{binary\+\_\+search}}
+\index{binary\+\_\+search@{binary\+\_\+search}!binary.\+cpp@{binary.\+cpp}}
+\paragraph{\texorpdfstring{binary\+\_\+search()}{binary\_search()}}
+{\footnotesize\ttfamily int binary\+\_\+search (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{from,  }\item[{int}]{to,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Finds an element in a sorted array. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the sorted array with the elements to search \\
+\hline
+{\em from} & the start of the range to search \\
+\hline
+{\em to} & the end of the range to search \\
+\hline
+{\em value} & the value to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the first match, or -\/1 if not found 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file binary.\+cpp.
+
+
+\begin{DoxyCode}
+16 \{  
+17    \textcolor{keywordflow}{if} (from > to) 
+18    \{ 
+19       \textcolor{keywordflow}{return} -1; 
+20    \}
+21 
+22    \textcolor{keywordtype}{int} mid = (from + to) / 2;
+23    \textcolor{keywordflow}{if} (a[mid] == value)
+24    \{
+25       \textcolor{keywordflow}{return} mid;
+26    \}
+27    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a[mid] < value)
+28    \{
+29       \textcolor{keywordflow}{return} \hyperlink{binary_8cpp_a961e363a3e72374639e432be6f19c6af}{binary\_search}(a, mid + 1, to, value);
+30    \}
+31    \textcolor{keywordflow}{else}
+32    \{
+33       \textcolor{keywordflow}{return} \hyperlink{binary_8cpp_a961e363a3e72374639e432be6f19c6af}{binary\_search}(a, from, mid - 1, value);
+34    \}
+35 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{binary_8cpp_a961e363a3e72374639e432be6f19c6af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{binary_8cpp_a2d4b2d69e71e492dde7fa00d7921087d}\label{binary_8cpp_a2d4b2d69e71e492dde7fa00d7921087d}} 
+\index{binary.\+cpp@{binary.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!binary.\+cpp@{binary.\+cpp}}
+\paragraph{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Binary Search\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file binary.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{binary_8cpp_a2d4b2d69e71e492dde7fa00d7921087d_cgraph}
+\end{center}
+\end{figure}
